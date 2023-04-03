@@ -16,7 +16,6 @@
             }
 
             if (!double.TryParse(input, out number)) {
-                Console.WriteLine("Invalid input, please try again.");
                 continue;
             }
 
@@ -35,17 +34,16 @@
 
         switch (mode) {
             case "FindMax":
-                Console.WriteLine("Maximum number entered: " + max);
+                Console.WriteLine(max);
                 break;
             case "FindMin":
-                Console.WriteLine("Minimum number entered: " + min);
+                Console.WriteLine(min);
                 break;
             case "FindMean":
                 if (count == 0) {
-                    Console.WriteLine("No numbers entered.");
                 } else {
                     double mean = sum / count;
-                    Console.WriteLine("Arithmetic mean of numbers entered: " + mean);
+                    Console.WriteLine(mean);
                 }
                 break;
             default:
